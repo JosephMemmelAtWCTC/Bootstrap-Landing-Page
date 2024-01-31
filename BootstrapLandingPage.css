@@ -50,7 +50,8 @@ body{
 }
 
 #hardSetLikeConeOf675{
-    width: 675px;
+    width: 600px;
+    /*width: 600px;*/
 }
 
 /* Custom bg-background colors */
@@ -72,11 +73,6 @@ body .nav-tabs .nav-link {
 body .nav-tabs .nav-item > .nav-link.active {
     background-color: var(--bs-primary);
     color: white;
-}
-
-.dropdown-menu{
-    position: fixed !important;
-    right:0 !important;
 }
 
 #mainFooter{
