@@ -1,0 +1,92 @@
+body{
+    --bs-primary: #003e7a;
+    --bs-btn-bg: #003e7a;
+    --bs-btn-color-rgb: 0, 62, 122;
+    --bs-primary-rgb: 0, 62, 122;
+    --bs-btn-bg-rgb: 0, 62, 122;
+    --bs-secondary: #ebf2fa;
+    --bs-secondary-rgb: 235, 242, 250;
+    --bs-btn-border-color: var(--bs-secondary);
+
+
+    --bs-nav-tabs-link-active-bg: var(--bs-primary);
+    --bs-nav-tabs-link-active-bg-rgb: var(--bs-btn-color-rgb);
+    /*--accordion-padding-y: ";*/
+}
+
+#continuousEducationHero {
+    background-image: url(https://www.wctc.edu/_site-images/academics-take-a-course-students-at-computers-h.jpg);
+    height: 317px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 4px;
+}
+#cardStripe {
+    background-image: url(https://www.wctc.edu/_resources/images/NWS-Stripe-Texture.jpg);
+    /*height: 317px;*/
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-position-x: center;
+}
+
+/* Changed from default of the collapsed icon used from https://codingyaar.com/change-bootstrap-accordion-icon/ */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+
+
+/* Order reverse for moving position of :after learned from https://stackoverflow.com/a/69833762 */
+.accordion-button:after {
+    order: -1;
+}
+
+/* Could not find way in bootstrap to officially open nav in hover - https://www.geeksforgeeks.org/how-to-open-dropdown-menu-on-hover-in-bootstrap/ */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+#hardSetLikeConeOf675{
+    width: 675px;
+}
+
+/* Custom bg-background colors */
+.bg-yellow {
+    background-color: #ffde74;
+}
+.bg-lightBlue {
+    background-color: #2d76bb;
+}
+.bg-cyan {
+    background-color: #31b6bd;
+}
+
+body .nav-tabs .nav-link {
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+body .nav-tabs .nav-item > .nav-link.active {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.dropdown-menu{
+    position: fixed !important;
+    right:0 !important;
+}
+
+#mainFooter{
+    background-image: url(https://www.wctc.edu/_resources/images/footer_bg.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#footerIcons span{
+    font-size: 35px;
+}
